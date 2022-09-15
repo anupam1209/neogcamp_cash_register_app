@@ -1,3 +1,14 @@
+*{
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto auto;
+}
+
 body{
     font-family:sans-serif;
 }
