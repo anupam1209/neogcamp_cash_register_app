@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Cash Register</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="heading">Cash Register Manager</h1>
-      <p class="description">
-        Enter the bill amount and cash given by the customer and know minimum
-        number of notes to return
-      </p>
-      <label for="bill-amount">Bill Amount: </label>
-      <input id="bill-amount" type="text" />
 
-      <label for="cash-given">Cash Given: </label>
-      <input id="cash-given" type="text" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Cash Register</title>
+</head>
 
-      <button id="check-button">Check</button>
-
-      <p id="error-message"></p>
-
-      <table class="change-table">
-        <caption>
-          Return Change
-        </caption>
-        <tr>
-          <th>Number of notes</th>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-          <td class="no-of-notes"></td>
-        </tr>
-        <tr>
-          <th>Note</th>
-          <td>2000</td>
-          <td>500</td>
-          <td>100</td>
-          <td>20</td>
-          <td>10</td>
-          <td>5</td>
-          <td>1</td>
-        </tr>
-      </table>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <div class="heading">
+        <h1 class="heading">Cash Register</h1>
+        <h1 class="mgr-heading">Manager</h1>
+      </div>
+      <img class="header-img" src="images/cash.svg" alt="">
     </div>
-    <script src="index.js" type="text/javascript"></script>
-  </body>
+    <p class="description">
+      Enter the bill amount and cash given by the customer and know minimum
+      number of notes to return
+    </p>
+    <label for="bill-amount">Bill Amount: </label>
+    <div class="input">
+      <input id="bill-amount" type="text" />
+    </div>
+
+    <label for="cash-given">Cash Given: </label>
+    <div class="input">
+      <input id="cash-given" type="text" />
+    </div>
+
+    <div class="btn">
+      <button id="check-button">Check ✅</button>
+    </div>
+
+    <p id="error-message"></p>
+
+    <table class="change-table">
+      <caption class="table-heading">
+        Return Change
+      </caption>
+      <tr>
+        <th>Number of notes</th>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+        <td class="no-of-notes"></td>
+      </tr>
+      <tr>
+        <th>Note</th>
+        <td>2000</td>
+        <td>500</td>
+        <td>100</td>
+        <td>20</td>
+        <td>10</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+    </table>
+  </div>
+  <footer class="footer">
+    <div class="footer-header">social media presence</div>
+    <ul class="social-links">
+      <li class="non-bullet list-item-inline">
+        <a class="link footer-link" href="https://github.com/anupam1209">github</a>
+      </li>
+      <li class="non-bullet list-item-inline">
+        <a class="link footer-link" href="https://twitter.com/AnupamPrakash">twitter</a>
+      </li>
+      <li class="non-bullet list-item-inline">
+        <a class="link footer-link" href="https://www.linkedin.com/in/anupam-prakash-54822818b/">linkedIn</a>
+      </li>
+    </ul>
+  </footer>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
 </html>
