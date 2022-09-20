@@ -9,6 +9,9 @@
     width: 50vw;
     margin: auto auto;
     gap: 0.5rem;
+    background-color: #fff5f5;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
 }
 
 .mgr-heading {
